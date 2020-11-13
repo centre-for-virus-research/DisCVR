@@ -73,7 +73,7 @@ public class KmersCounting {
         
         // Create shell command for KAnalyze. Created as String array for compatibility with Unix shells.
         String command2[] = {"java", "-jar", "-Xmx3G", kAnalyzeDir+File.separator+"kanalyze.jar", "count", "-k", kSize+"", "-o",
-				outputFile, "-f", inputFormat, inputFile, "-rcanonical"};
+				outputFile, "-f AUTO", inputFile, "-rcanonical"};
 
         try {
         	String line;
